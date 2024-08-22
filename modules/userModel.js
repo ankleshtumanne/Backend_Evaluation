@@ -5,7 +5,7 @@ const userSchema=new mongoose.Schema({
     password:String,
     enrolledCourses:[{
         type : mongoose.Schema.Types.ObjectId ,
-        ref: 'Course'
+        ref: 'course'
     }]
 })
 const usermodel=mongoose.model("user",userSchema)
